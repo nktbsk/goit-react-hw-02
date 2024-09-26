@@ -1,0 +1,82 @@
+.profile {
+  background-color: azure;
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+  border: 3px solid #33372c;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.userAvatar {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-top: 15px;
+  border: 1px solid #33372c;
+  border-radius: 50%;
+  background-color: #33372c;
+  margin-bottom: 10px;
+}
+
+.userName {
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+.userTag {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #808080;
+  letter-spacing: 0.05em;
+}
+
+.userLocation {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #808080;
+  letter-spacing: 0.03em;
+}
+
+/** СТАТИСТИКА  */
+
+.listStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 равные колонки */
+  border-top: 3px solid #808080;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #e0dcdd;
+}
+
+.listItem:first-child {
+  border-bottom-left-radius: 7px;
+}
+
+.listItem:nth-child(2) {
+  border-left: 3px solid #666666;
+  border-right: 3px solid #666666;
+}
+
+.listItem:last-child {
+  border-bottom-right-radius: 7px;
+}
+
+.statsText {
+  font-weight: 500;
+}
+
+.statsNumbers {
+  font-weight: 600;
+}
