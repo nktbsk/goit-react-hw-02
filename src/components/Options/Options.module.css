@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.good {
+  background-color: green;
+  color: white;
+}
+
+.neutral {
+  background-color: gray;
+  color: white;
+}
+
+.bad {
+  background-color: red;
+  color: white;
+}
