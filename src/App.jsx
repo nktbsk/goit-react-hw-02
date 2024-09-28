@@ -36,7 +36,7 @@ const App = () => {
   const percentGoodFeedback = Math.round((feedback.good / totalFeedback) * 100);
 
   return (
-    <>
+    <div style={{ padding: "10px 20px" }}>
       <Description />
       <Options
         options={Object.keys(feedback)}
@@ -52,7 +52,7 @@ const App = () => {
       ) : (
         <p>No feedback yet</p>
       )}
-    </>
+    </div>
   );
 };
 
