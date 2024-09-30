@@ -42,6 +42,7 @@ const App = () => {
         options={Object.keys(feedback)}
         onLeaveFeedback={updateFeedback}
         onReset={resetFeedback}
+        show={hasFeedback}
       />
       {hasFeedback ? (
         <Feedback

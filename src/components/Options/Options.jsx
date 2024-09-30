@@ -1,6 +1,6 @@
 import style from "./Options.module.css";
 
-const Options = ({ options, onLeaveFeedback, onReset }) => {
+const Options = ({ options, onLeaveFeedback, onReset, show }) => {
   return (
     <div className={style.wrapper}>
       {options.map((option) => (
@@ -13,9 +13,11 @@ const Options = ({ options, onLeaveFeedback, onReset }) => {
         </button>
       ))}
 
-      <button className={style.btn} onClick={onReset}>
-        Reset
-      </button>
+      {show && (
+        <button className={style.btnReset} onClick={onReset}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };
